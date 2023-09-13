@@ -24,17 +24,6 @@ img {
   .backdrop-blur {
     backdrop-filter: blur(25px);
   }
-  .slider-link-active::before {
-    content: "";
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: #ffffff;
-    position: absolute;
-    top: calc(50% - 3px);
-    left: -14px;
-    transform: rotate(45deg);
-  }
 }
 
 @layer components {
@@ -54,10 +43,6 @@ img {
 
   .contact-link {
     @apply text-smm not-italic font-normal md:text-subtextlg lg:text-textlg hover:underline focus:underline;
-  }
-
-  input:checked + svg .checkbox-icon-small {
-    fill: rgba(255, 255, 255, 1);
   }
 
   .container {
@@ -83,6 +68,21 @@ img {
   .bg-base {
     @apply bg-no-repeat bg-cover bg-center;
   }
+}
+
+.slider-link-active::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: -14px;
+  transform: rotate(45deg);
+}
+input:checked + svg .checkbox-icon-small {
+  fill: rgba(255, 255, 255, 1);
 }
 
 .background-hero {
