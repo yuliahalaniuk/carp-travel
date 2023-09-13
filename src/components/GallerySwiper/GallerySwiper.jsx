@@ -21,7 +21,6 @@ const GallerySwiper = ({ array }) => {
         loop={true}
         slidesPerView={3}
         modules={[Navigation, A11y, Grid]}
-        onSwiper={(swiper) => console.log(swiper)}
         navigation={{
           prevEl: navigationPrevRef.current,
           nextEl: navigationNextRef.current,
