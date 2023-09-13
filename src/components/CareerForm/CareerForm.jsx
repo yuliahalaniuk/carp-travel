@@ -68,7 +68,13 @@ const CareerForm = () => {
         {/* ---------------- position --------------------------- */}
 
         <div className="relative">
-          <label className="career-label  ">
+          <label
+            className={
+              errors.position
+                ? "career-label text-error-clr  "
+                : "career-label  "
+            }
+          >
             Position
             <input
               className="input"
@@ -85,7 +91,7 @@ const CareerForm = () => {
         <div className="relative">
           <label
             className={
-              errors.phone ? "career-label text-error-clr  " : "career-label  "
+              errors.number ? "career-label text-error-clr  " : "career-label  "
             }
           >
             Phone

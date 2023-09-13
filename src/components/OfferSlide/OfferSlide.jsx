@@ -16,9 +16,6 @@ const OfferSlide = ({ number, message, moto, image, changeSlide }) => {
 
         <Image
           src={image}
-          width={"100%"}
-          height={213}
-          objectFit="cover"
           alt="Picture of activity"
           className="w-full h-[213px] md:row-start-2 md:row-end-5 md:col-start-1 md:w-[463px] md:h-[370px] lg:w-[608px] lg:h-[434px]"
         />

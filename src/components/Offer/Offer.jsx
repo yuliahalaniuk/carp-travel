@@ -30,7 +30,6 @@ const Offer = () => {
         loop
         modules={[Navigation, A11y, EffectFade]}
         slidesPerView={1}
-        firstSlide={0}
         effect="fade"
         allowTouchMove={false}
       >
