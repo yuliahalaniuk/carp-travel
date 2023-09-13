@@ -2,26 +2,182 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  color: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+img {
+  display: block;
+}
+
+@layer base {
+  * {
+    @apply box-border;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+  .clip-input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+  }
+  .backdrop-blur {
+    backdrop-filter: blur(25px);
+  }
+  .slider-link-active::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: -14px;
+    transform: rotate(45deg);
+  }
+}
+
+@layer components {
+  .title {
+    @apply text-4xxl font-thin   uppercase tracking-thetightest md:text-xlmd
+    md:tracking-titlemd lg:text-xllg lg:tracking-titlelg;
+  }
+  .text {
+    @apply text-sm  font-extralight md:text-textms lg:text-textlg;
+  }
+  .input {
+    @apply w-full   h-6 bg-input-clr pl-2 pr-2 placeholder-opacity-20  placeholder-white  focus:outline-none focus:border-none lg:h-7 text-wides lg:text-widess;
+  }
+  .career-label {
+    @apply text-widexxxs w-full font-extralight tracking-almostwidest flex flex-col gap-1 relative;
+  }
+
+  .contact-link {
+    @apply text-smm not-italic font-normal md:text-subtextlg lg:text-textlg hover:underline focus:underline;
+  }
+
+  input:checked + svg .checkbox-icon-small {
+    fill: rgba(255, 255, 255, 1);
+  }
+
+  .container {
+    @apply pl-5 pr-5 max-w-mobct ml-auto mr-auto md:max-w-tablct  lg:max-w-deskct lg:pl-6 lg:pr-6;
+  }
+
+  .section {
+    @apply pt-14 pb-14  md:pt-16 md:pb-16 lg:pt-20 lg:pb-20;
+  }
+
+  .slider-link {
+    @apply text-xxl font-extralight uppercase opacity-50 md:text-xxlmd lg:text-textsliderlg hover:opacity-100 focus:opacity-100 transition-opacity;
+  }
+
+  .slider-link-active {
+    @apply text-xxl font-medium uppercase md:text-xxlmd ml-[14px] lg:text-textsliderlg relative;
+  }
+
+  .error-text {
+    @apply text-error-clr text-right text-errorxs tracking-almostwidest font-extralight;
+  }
+
+  .bg-base {
+    @apply bg-no-repeat bg-cover bg-center;
+  }
+}
+
+.background-hero {
+  background-image: url(../images/backgrounds/bg-mob-hero.jpg);
+}
+.background-about {
+  background-image: url(../images/backgrounds/bg-mob-about.jpg);
+}
+.background-сhoose {
+  background-image: url(../images/backgrounds/bg-mob-career.jpg);
+}
+.background-gallery {
+  background-image: url(../images/backgrounds/bg-mob-gallery.jpg);
+}
+.background-contacts {
+  background-image: url(../images/backgrounds/bg-mob-contacts.jpg);
+}
+.background-service-1 {
+  background-image: url(../images/backgrounds/bg-mob-services-1.jpg);
+}
+.background-service-2 {
+  background-image: url(../images/backgrounds/bg-mob-services-2.jpg);
+}
+.background-service-3 {
+  background-image: url(../images/backgrounds/bg-mob-services-3.jpg);
+}
+.background-service-4 {
+  background-image: url(../images/backgrounds/bg-mob-services-4.jpg);
+}
+.background-service-5 {
+  background-image: url(../images/backgrounds/bg-mob-services-5.jpg);
+}
+
+@media (min-width: 768px) {
+  .background-hero {
+    background-image: url(../images/backgrounds/bg-tab-hero.jpg);
+  }
+  .background-about {
+    background-image: url(../images/backgrounds/bg-tab-about.jpg);
+  }
+  .background-сhoose {
+    background-image: url(../images/backgrounds/bg-tab-career.jpg);
+  }
+  .background-gallery {
+    background-image: url(../images/backgrounds/bg-tab-gallery.jpg);
+  }
+  .background-contacts {
+    background-image: url(../images/backgrounds/bg-tab-contacts.jpg);
+  }
+  .background-service-1 {
+    background-image: url(../images/backgrounds/bg-tab-services-1.jpg);
+  }
+  .background-service-2 {
+    background-image: url(../images/backgrounds/bg-tab-services-2.jpg);
+  }
+  .background-service-3 {
+    background-image: url(../images/backgrounds/bg-tab-services-3.jpg);
+  }
+  .background-service-4 {
+    background-image: url(../images/backgrounds/bg-tab-services-4.jpg);
+  }
+  .background-service-5 {
+    background-image: url(../images/backgrounds/bg-tab-services-5.jpg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .background-hero {
+    background-image: url(../images/backgrounds/bg-desk-hero.jpg);
+  }
+  .background-about {
+    background-image: url(../images/backgrounds/bg-desk-about.jpg);
+  }
+  .background-contacts {
+    background-image: url(../images/backgrounds/bg-desk-contacts.jpg);
+  }
+  .background-gallery {
+    background-image: url(../images/backgrounds/bg-desk-gallery.jpg);
+  }
+  .background-choose {
+    background-image: url(../images/backgrounds/bg-desk-career.jpg);
+  }
+  .background-service-1 {
+    background-image: url(../images/backgrounds/bg-desk-services-1.jpg);
+  }
+  .background-service-2 {
+    background-image: url(../images/backgrounds/bg-desk-services-2.jpg);
+  }
+  .background-service-3 {
+    background-image: url(../images/backgrounds/bg-desk-services-3.jpg);
+  }
+  .background-service-4 {
+    background-image: url(../images/backgrounds/bg-desk-services-4.jpg);
+  }
+  .background-service-5 {
+    background-image: url(../images/backgrounds/bg-desk-services-5.jpg);
+  }
 }
