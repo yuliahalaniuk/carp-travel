@@ -92,7 +92,7 @@ img {
   background-image: url(../images/backgrounds/bg-mob-about.jpg);
 }
 .background-сhoose {
-  background-image: url(../images/backgrounds/bg-mob-career.jpg);
+  background-image: url(../images/backgrounds/bg-mob-career-min.jpg);
 }
 .background-gallery {
   background-image: url(../images/backgrounds/bg-mob-gallery.jpg);
@@ -115,7 +115,11 @@ img {
 .background-service-5 {
   background-image: url(../images/backgrounds/bg-mob-services-5.jpg);
 }
-
+@media (min-width: 480px) {
+  .background-сhoose {
+    background-image: url(../images/backgrounds/bg-mob-career.jpg);
+  }
+}
 @media (min-width: 768px) {
   .background-hero {
     background-image: url(../images/backgrounds/bg-tab-hero.jpg);
