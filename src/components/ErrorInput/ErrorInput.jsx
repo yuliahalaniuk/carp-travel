@@ -1,5 +1,5 @@
 import React from "react";
-import CloseIcon from "@/images/svg/cross.svg";
+import CloseIcon from "public/images/svg/cross.svg";
 
 const ErrorInput = ({ type, name }) => {
   if (type === "required") {

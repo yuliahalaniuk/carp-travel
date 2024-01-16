@@ -1,14 +1,14 @@
 import React from "react";
 import { Button } from "react-scroll";
 
-import BorderMobLeft from "../../images/svg/border-mob-l.svg";
-import BorderMobRight from "../../images/svg/border-mob-r.svg";
+import BorderMobLeft from "public/images/svg/border-mob-l.svg";
+import BorderMobRight from "public/images/svg/border-mob-r.svg";
 
-import BorderTabRight from "../../images/svg/border-tab-r.svg";
-import BorderTabLeft from "../../images/svg/border-tab-l.svg";
+import BorderTabRight from "public/images/svg/border-tab-r.svg";
+import BorderTabLeft from "public/images/svg/border-tab-l.svg";
 
-import BorderDeskRight from "../../images/svg/border-desk-r.svg";
-import BorderDeskLeft from "../../images/svg/border-desk-l.svg";
+import BorderDeskRight from "public/images/svg/border-desk-r.svg";
+import BorderDeskLeft from "public/images/svg/border-desk-l.svg";
 import useMediaQuery from "@/hook/hook";
 
 const JoinBtn = () => {

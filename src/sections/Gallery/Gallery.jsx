@@ -2,15 +2,14 @@
 import Image from "next/image";
 import React from "react";
 import useMediaQuery from "@/hook/hook";
-import GallerySwiper from "../GallerySwiper/GallerySwiper";
+import GallerySwiper from "../../components/GallerySwiper/GallerySwiper";
 
-import mountain1 from "@/images/gallery-1.jpg";
-import mountain2 from "@/images/gallery-2.jpg";
-import mountain3 from "@/images/gallery-3.jpg";
+import mountain2 from "public/images/gallery-2.jpg";
+import mountain3 from "public/images/gallery-3.jpg";
+import mountain1 from "public/images/gallery-1.jpg";
 
 const Gallery = () => {
   const isBreakpoint = useMediaQuery(768);
-
   return (
     <section id="gallery" className="section background-gallery bg-base">
       <div className="container ">
@@ -19,7 +18,7 @@ const Gallery = () => {
         </h2>
         {!isBreakpoint ? (
           <GallerySwiper
-            array={[
+            imagesArray={[
               mountain1,
               mountain2,
               mountain3,

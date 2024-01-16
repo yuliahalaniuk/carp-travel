@@ -86,102 +86,102 @@ input:checked + svg .checkbox-icon-small {
 }
 
 .background-hero {
-  background-image: url(../images/backgrounds/bg-mob-hero.jpg);
+  background-image: url(/images/backgrounds/bg-mob-hero.jpg);
 }
 .background-about {
-  background-image: url(../images/backgrounds/bg-mob-about.jpg);
+  background-image: url(/images/backgrounds/bg-mob-about.jpg);
 }
 .background-сhoose {
-  background-image: url(../images/backgrounds/bg-mob-career-min.jpg);
+  background-image: url(/images/backgrounds/bg-mob-career-min.jpg);
 }
 .background-gallery {
-  background-image: url(../images/backgrounds/bg-mob-gallery.jpg);
+  background-image: url(/images/backgrounds/bg-mob-gallery.jpg);
 }
 .background-contacts {
-  background-image: url(../images/backgrounds/bg-mob-contacts.jpg);
+  background-image: url(/images/backgrounds/bg-mob-contacts.jpg);
 }
 .background-service-1 {
-  background-image: url(../images/backgrounds/bg-mob-services-1.jpg);
+  background-image: url(/images/backgrounds/bg-mob-services-1.jpg);
 }
 .background-service-2 {
-  background-image: url(../images/backgrounds/bg-mob-services-2.jpg);
+  background-image: url(/images/backgrounds/bg-mob-services-2.jpg);
 }
 .background-service-3 {
-  background-image: url(../images/backgrounds/bg-mob-services-3.jpg);
+  background-image: url(/images/backgrounds/bg-mob-services-3.jpg);
 }
 .background-service-4 {
-  background-image: url(../images/backgrounds/bg-mob-services-4.jpg);
+  background-image: url(/images/backgrounds/bg-mob-services-4.jpg);
 }
 .background-service-5 {
-  background-image: url(../images/backgrounds/bg-mob-services-5.jpg);
+  background-image: url(/images/backgrounds/bg-mob-services-5.jpg);
 }
 @media (min-width: 480px) {
   .background-сhoose {
-    background-image: url(../images/backgrounds/bg-mob-career.jpg);
+    background-image: url(/images/backgrounds/bg-mob-career.jpg);
   }
 }
 @media (min-width: 768px) {
   .background-hero {
-    background-image: url(../images/backgrounds/bg-tab-hero.jpg);
+    background-image: url(/images/backgrounds/bg-tab-hero.jpg);
   }
   .background-about {
-    background-image: url(../images/backgrounds/bg-tab-about.jpg);
+    background-image: url(/images/backgrounds/bg-tab-about.jpg);
   }
   .background-сhoose {
-    background-image: url(../images/backgrounds/bg-tab-career.jpg);
+    background-image: url(/images/backgrounds/bg-tab-career.jpg);
   }
   .background-gallery {
-    background-image: url(../images/backgrounds/bg-tab-gallery.jpg);
+    background-image: url(/images/backgrounds/bg-tab-gallery.jpg);
   }
   .background-contacts {
-    background-image: url(../images/backgrounds/bg-tab-contacts.jpg);
+    background-image: url(/images/backgrounds/bg-tab-contacts.jpg);
   }
   .background-service-1 {
-    background-image: url(../images/backgrounds/bg-tab-services-1.jpg);
+    background-image: url(/images/backgrounds/bg-tab-services-1.jpg);
   }
   .background-service-2 {
-    background-image: url(../images/backgrounds/bg-tab-services-2.jpg);
+    background-image: url(/images/backgrounds/bg-tab-services-2.jpg);
   }
   .background-service-3 {
-    background-image: url(../images/backgrounds/bg-tab-services-3.jpg);
+    background-image: url(/images/backgrounds/bg-tab-services-3.jpg);
   }
   .background-service-4 {
-    background-image: url(../images/backgrounds/bg-tab-services-4.jpg);
+    background-image: url(/images/backgrounds/bg-tab-services-4.jpg);
   }
   .background-service-5 {
-    background-image: url(../images/backgrounds/bg-tab-services-5.jpg);
+    background-image: url(/images/backgrounds/bg-tab-services-5.jpg);
   }
 }
 
 @media (min-width: 1280px) {
   .background-hero {
-    background-image: url(../images/backgrounds/bg-desk-hero.jpg);
+    background-image: url(/images/backgrounds/bg-desk-hero.jpg);
   }
   .background-about {
-    background-image: url(../images/backgrounds/bg-desk-about.jpg);
+    background-image: url(/images/backgrounds/bg-desk-about.jpg);
   }
   .background-contacts {
-    background-image: url(../images/backgrounds/bg-desk-contacts.jpg);
+    background-image: url(/images/backgrounds/bg-desk-contacts.jpg);
   }
   .background-gallery {
-    background-image: url(../images/backgrounds/bg-desk-gallery.jpg);
+    background-image: url(/images/backgrounds/bg-desk-gallery.jpg);
   }
   .background-choose {
-    background-image: url(../images/backgrounds/bg-desk-career.jpg);
+    background-image: url(/images/backgrounds/bg-desk-career.jpg);
   }
   .background-service-1 {
-    background-image: url(../images/backgrounds/bg-desk-services-1.jpg);
+    background-image: url(/images/backgrounds/bg-desk-services-1.jpg);
   }
   .background-service-2 {
-    background-image: url(../images/backgrounds/bg-desk-services-2.jpg);
+    background-image: url(/images/backgrounds/bg-desk-services-2.jpg);
   }
   .background-service-3 {
-    background-image: url(../images/backgrounds/bg-desk-services-3.jpg);
+    background-image: url(/images/backgrounds/bg-desk-services-3.jpg);
   }
   .background-service-4 {
-    background-image: url(../images/backgrounds/bg-desk-services-4.jpg);
+    background-image: url(/images/backgrounds/bg-desk-services-4.jpg);
   }
   .background-service-5 {
-    background-image: url(../images/backgrounds/bg-desk-services-5.jpg);
+    background-image: url(/images/backgrounds/bg-desk-services-5.jpg);
   }
 }

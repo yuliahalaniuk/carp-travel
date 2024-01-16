@@ -8,11 +8,11 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import OfferSlide from "@/components/OfferSlide/OfferSlide";
 
-import activity1 from "@/images/services/activity-1.jpg";
-import activity2 from "@/images/services/activity-2.jpg";
-import activity3 from "@/images/services/activity-3.jpg";
-import activity4 from "@/images/services/activity-4.jpg";
-import activity5 from "@/images/services/activity-5.jpg";
+import activity1 from "public/images/services/activity-1.jpg";
+import activity2 from "public/images/services/activity-2.jpg";
+import activity3 from "public/images/services/activity-3.jpg";
+import activity4 from "public/images/services/activity-4.jpg";
+import activity5 from "public/images/services/activity-5.jpg";
 
 const Offer = () => {
   const sliderRef = useRef(null);

@@ -6,12 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Grid } from "swiper/modules";
 import "../../app/swiper.css";
 
-const GallerySwiper = ({ array }) => {
+const GallerySwiper = ({ imagesArray }) => {
   const sliderRef = useRef(null);
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
   const isBreakpoint = useMediaQuery(1280);
+
   return (
     <>
       <Swiper
@@ -26,7 +27,7 @@ const GallerySwiper = ({ array }) => {
           nextEl: navigationNextRef.current,
         }}
       >
-        {array.map((img, i) => (
+        {imagesArray.map((img, i) => (
           <SwiperSlide key={i}>
             {({ isActive }) => (
               <div className="flex justify-center items-center  h-[294px]">

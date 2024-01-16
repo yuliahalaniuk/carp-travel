@@ -2,8 +2,8 @@
 
 import React from "react";
 
-import AddressBox from "../AddressBox/AddressBox";
-import ContactsForm from "../ContactsForm/ContactsForm";
+import AddressBox from "../../components/AddressBox/AddressBox";
+import ContactsForm from "../../components/ContactsForm/ContactsForm";
 const Contacts = () => {
   return (
     <section id="contacts" className="section background-contacts bg-base">

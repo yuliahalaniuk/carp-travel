@@ -25,7 +25,7 @@ const About = () => {
         </div>
         <div className="mb-10 w-textcont ml-auto md:row-start-1 md:col-start-1 md:self-end md:justify-self-start md:w-[221px] md:mb-16   lg:w-[297px] lg:row-start-2 lg:col-start-4 lg:mb-0">
           <p className="text-sm font-normal uppercase md:text-textms lg:text-textlg text-left">
-            From vacationers{" "}
+            From vacationers
           </p>
           <p className="text-sm font-normal uppercase md:text-textms lg:text-textlg text-right">
             to active travelers
