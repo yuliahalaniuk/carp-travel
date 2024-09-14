@@ -2,19 +2,20 @@ import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import FormField from "../FormField/FormField";
 import { contactsFormInputsProps } from "@/data/contactsFormInputsProps";
+import TextAreaField from "../TextAreaField/TextAreaField";
+import { toast } from "react-toastify";
 
 const ContactsForm = () => {
   const form = useForm();
 
-  const {
-    register,
-    formState: { errors },
-    handleSubmit,
-  } = form;
+  const { register, handleSubmit } = form;
 
-  const onSubmit = (data, e) => {
-    console.log(data);
-    e.target.reset();
+  const onSubmit = (data) => {
+    sessionStorage.setItem("formData", JSON.stringify(data));
+
+    toast.success("Your information was submitted successfully");
+
+    form.reset();
   };
 
   return (
@@ -27,16 +28,11 @@ const ContactsForm = () => {
             ))}
           </div>
 
-          {/* ---------------- textArea --------------------------- */}
-
-          <label className="career-label md:w-[463px] lg:w-[607px] ">
-            Message
-            <textarea
-              className="w-full h-[196px] md:h-[221px] lg:h-[174px] bg-input-clr pl-2 pr-2 resize-none focus:outline-none focus:border-none text-wides lg:text-widess"
-              type="text"
-              {...register("message")}
-            />
-          </label>
+          <TextAreaField
+            register={register("message")}
+            className="md:w-[463px] lg:w-[607px]"
+            height="h-[196px] md:h-[221px] lg:h-[174px]"
+          />
         </div>
 
         <button

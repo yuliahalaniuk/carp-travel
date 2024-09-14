@@ -8,7 +8,6 @@ const FormField = ({ inputName, inputType, label, validation, className }) => {
     formState: { errors },
   } = useFormContext();
 
-  // className="lg:w-[292px] relative">
 
   return (
     <div className={className ? className : "lg:w-[292px] relative"}>
