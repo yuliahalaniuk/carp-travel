@@ -6,7 +6,7 @@ import JoinBtn from "@/components/JoinBtn/JoinBtn";
 const Hero = () => {
   return (
     <section className="pt-[105px] pb-14 bg-base background-hero  md:pt-[122px] md:pb-16">
-      <div className="container  flex flex-col gap-6  md:grid md:grid-cols-[426px,230px] md:gap-x-12  lg:grid-cols-[646px,305px] lg:gap-x-[281px] ">
+      <div className="container  flex flex-col gap-6  md:grid md:grid-cols-[426px,230px] md:gap-x-12  lg:grid-cols-[646px,305px] lg:gap-x-[272px] ">
         <div className="flex flex-col  w-max ml-auto md:row-start-1 md:col-start-2 md:mb-14 lg:mb-[181px] ">
           <p className="text-[37px] font-medium  md:text-xlmd uppercase lg:text-xllg">
             7
